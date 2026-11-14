@@ -1,16 +1,57 @@
-# kamao_latest
+<p align="center"><img src="docs/readme-banner.svg" width="100%" alt="Kamao: Account, verification, and balance-management screens." /></p>
 
-A new Flutter project.
+<p align="center"><a href="#project-guide">Project guide</a> · <a href="https://github.com/abdullahwaseem-dev/kamao/tree/master">Browse source</a> · <a href="https://github.com/abdullahwaseem-dev">Developer profile</a></p>
 
-## Getting Started
+<a id="project-guide"></a>
 
-This project is a starting point for a Flutter application.
+# Kamao — Flutter · GetX
 
-A few resources to get you started if this is your first Flutter project:
+A Flutter application prototype centred on account onboarding, verification, dashboard, balance, package, and withdrawal screens. It demonstrates GetX navigation and responsive UI structure.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Highlights
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Login, signup, OTP, and password-reset screens.
+- Dashboard and account/settings interfaces.
+- Balance, packages, verification, and withdrawal UI.
+
+## Run locally
+
+Use a Flutter SDK whose bundled Dart version satisfies `>=3.4.4 <4.0.0`, as declared in [pubspec.yaml](pubspec.yaml). Configure the platform toolchain for your intended device.
+
+```sh
+git clone https://github.com/abdullahwaseem-dev/kamao.git
+cd kamao
+flutter pub get
+flutter run
+```
+
+## Source map
+
+- [lib/main.dart](lib/main.dart)
+- [lib/views/dashboard.dart](lib/views/dashboard.dart)
+- [lib/views/withdraw_view.dart](lib/views/withdraw_view.dart)
+
+## Current scope
+
+The presence of balance and withdrawal screens does not establish a working payment or payout service. Treat financial operations as unverified until the backend and transaction flows are tested.
+
+## Verification
+
+```sh
+flutter analyze
+flutter test
+```
+
+These commands describe how to check the project; they were not run as part of the documentation refresh. Platform directories and declared dependencies do not prove that every target builds successfully.
+
+
+---
+
+## Author and project links
+
+Built by [Muhammad Abdullah Waseem](https://github.com/abdullahwaseem-dev). [Portfolio](https://abdullah-waseem.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/abdullahwaseem-dev/) · [Project enquiries](mailto:maw112266@gmail.com)
+
+For a bug report, include the affected version, environment, reproduction steps, and expected behaviour in [Issues](https://github.com/abdullahwaseem-dev/kamao/issues). If the project is useful to you, a star is appreciated.
+
+**Reuse:** no root license file was found during this review. Public visibility alone does not grant permission to reuse the code; contact the author for terms.
+
